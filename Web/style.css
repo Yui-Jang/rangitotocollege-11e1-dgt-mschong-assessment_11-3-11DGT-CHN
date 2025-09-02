@@ -1,3 +1,52 @@
 body {
-    background-color: blanchedalmond;
+    background-color: rgba(255, 226, 184, 0.688);
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "body body"
+    "footer footer"
+}
+
+
+
+
+.container > div.body {
+    color: white;
+    background-color: black;
+}
+
+div.footer {
+    background-color: white;
+
+}
+div.title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+summary:hover {
+    cursor: pointer;
+} 
+
+div.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 200%;
+    background-color: white;
+    color: black;
+}
+
+div.insideskills {
+    display: flex;
+    flex-direction: column;
 }
