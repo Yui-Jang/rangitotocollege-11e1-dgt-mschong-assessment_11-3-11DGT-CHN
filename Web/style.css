@@ -18,37 +18,50 @@
 
 ul {
     list-style: none;
+    font-size: 120%;
 }
 
 ul li {
     display: inline-block;
     position: relative;
+    font-size: 100%;
 }
 
 ul li a {
     display: block;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    transition-duration: 0s;
 }
+
 
 ul li ul.dropdown li {
     display: block;
+    font-size: 80%;
+    transition-duration: 0s;
 }
 
 ul li ul.dropdown {
-    width: 100%;
-    background: white;
+    width: 140%;
+    background: rgb(228, 218, 216);
     position: absolute;
     z-index: 999;
     display: none;
+    border-radius: 25px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition-duration: 0s;
 }
 
 ul li a:hover {
     background-color: rgb(191, 178, 164);
+    transition-duration: 0s;
 }
 
 ul li:hover ul.dropdown {
     display: block;
+    transition-duration: 0s;
 }
 
 
@@ -127,9 +140,6 @@ summary:hover {
     border-radius: 20px;
     border: 5px;
     transition-duration: 0.5s;
-    margin-left: 5px;
-    margin-right: 5px;
-    
 } 
 
 summary {
@@ -157,8 +167,6 @@ a:hover {
   background-color: #d49a90;
   border-radius: 20px;
   cursor: pointer;
-  margin-left: 3px;
-  margin-right: 3px
 }
 div.banner {
     background-color: white;
