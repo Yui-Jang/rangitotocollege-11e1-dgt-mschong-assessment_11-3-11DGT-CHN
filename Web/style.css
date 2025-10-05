@@ -16,6 +16,42 @@
   font-style: light;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background-color: rgb(191, 178, 164);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
 body {
     color: black;
     font-family: "Dongle", sans-serif;
