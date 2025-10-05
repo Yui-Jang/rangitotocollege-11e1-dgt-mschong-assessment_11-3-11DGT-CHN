@@ -1,52 +1,184 @@
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 300;
+  font-style: light;
+}
+
 body {
-    background-color: rgba(255, 226, 184, 0.688);
     color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0;
-    margin: 0;
+    font-family: "Dongle", sans-serif;
+    font-size: 120%;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: #f3e7e7;
 }
 
 .container {
     display: grid;
-    grid-gap: 10px;
     grid-template-areas:
-    "body body"
-    "footer footer"
+    "bodyone bodytwo"
+    "bodyone bodytwo";
+    grid-template-columns: auto auto;
+}
+
+h1 {
+    font-size: 100%;
 }
 
 
-
-
-.container > div.body {
-    color: white;
-    background-color: black;
+div.body {
+    color: rgb(86, 55, 46);
+    background-color: #f3e7e7;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 div.footer {
-    background-color: white;
-
+  font-family: "Dongle", sans-serif;
+  color: black;
+  grid-area: footer;
+  background-color: #966c5a;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 80px;
+  justify-content: flex-end;
+  border-top: solid;
+  border-color: #966c5a;
+  padding-top: 10%;
 }
-div.title {
-    background-color: black;
-    color: white;
-    text-align: center;
+
+p {
+    margin: 5%;
+    font-size: 150%;
+}
+
+div.footerword {
+    margin-right: 200px;
+    font-size: 130%;
+}
+
+div.banner {
+    padding-top: 10px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff8f4;
+    color: #71463c;
     padding: 5px;
-    margin: 0;
+    justify-content: space-around;
+    font-size: 200%;
+    background-color: #f3e7e7;
 }
 
 summary:hover {
     cursor: pointer;
+    color: rgb(255, 189, 189);
+    background-color: #7b3328;
+    border-radius: 20px;
+    border: 5px;
+    transition-duration: 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 } 
 
-div.navbar {
-    display: flex;
-    justify-content: space-around;
-    font-size: 200%;
-    background-color: white;
+summary {
+    transition-duration: 0.5s;
     color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container2 {
+    display: grid;
+    grid-template-areas:
+    "img chunk1"
+    "chunk2 img2";
+    grid-template-columns: auto auto;
 }
 
-div.insideskills {
-    display: flex;
-    flex-direction: column;
+a {
+    color: #374444;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+  color: rgb(76, 50, 50);
+  transition-duration: 0.4s;
+  background-color: #d49a90;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px
+}
+div.banner {
+    background-color: white;
+}
+
+div.toptitle {
+    margin-right: 7px;
+    font-size: 200%;
+}
+div.navbar {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 180%;
+  margin: 0%;
+  position: relative;
+  top: 35px;
+}
+
+.container > div.bodyone {
+    background-color: rgb(203, 188, 188);
+    border-radius: 50px;
+    grid-area: bodyone;
+    margin: 5%;
+    height: 70%;
+}
+
+.container > div.bodytwo {
+    background-color: rgb(188, 165, 165);
+    border-radius: 50px;
+    grid-area: bodytwo;
+    margin: 5%;
+    height: 70%;
+}
+
+#img1 {
+    width: 40%;
+    border-radius: 50px;
+    margin-left: 5%;
+    float: left;
+    text-align: left;
+}
+
+#img1point5 {
+    width: 40%;
+    border-radius: 50px;
+    margin-left: 50%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    float: right;
+    position: relative;
+    bottom: 37%;
+}
+
+#img2 {
+    width: 20%;
+    border-radius: 50px;
 }
