@@ -33,6 +33,8 @@ ul li a {
     text-decoration: none;
     text-align: left;
     transition-duration: 0s;
+    padding: none;
+    margin: 0;
 }
 
 
@@ -40,29 +42,38 @@ ul li ul.dropdown li {
     display: block;
     font-size: 80%;
     transition-duration: 0s;
+    padding: none;
+    margin: 0;
 }
 
+/*css that allows the dropdown menu to be undisplayed when not hovered over */
 ul li ul.dropdown {
     width: 140%;
     background: rgb(228, 218, 216);
     position: absolute;
     z-index: 999;
     display: none;
-    border-radius: 25px;
     margin-right: 5px;
     margin-top: 2px;
     margin-bottom: 2px;
+    border-radius: 25px;
     transition-duration: 0s;
+    padding: none;
+    margin: 0;
 }
 
 ul li a:hover {
     background-color: rgb(191, 178, 164);
     transition-duration: 0s;
+    padding: none;
+    margin: 0;
 }
 
 ul li:hover ul.dropdown {
     display: block;
     transition-duration: 0s;
+    padding: none;
+    margin: 0;
 }
 
 
@@ -168,6 +179,8 @@ a:hover {
   background-color: #d49a90;
   border-radius: 20px;
   cursor: pointer;
+  padding: none;
+  margin: none;
 }
 div.banner {
     background-color: white;
@@ -235,6 +248,7 @@ div.navbar {
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 5%;
+    position: static;
 }
 
 div.buttongrid {
