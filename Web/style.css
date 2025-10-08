@@ -206,7 +206,7 @@ div.navbar {
     border-radius: 50px;
     grid-area: bodyone;
     margin: 5%;
-    height: 70%;
+    height: 95%;
 }
 
 .container > div.bodytwo {
@@ -218,8 +218,8 @@ div.navbar {
 }
 
 #img1 {
-    width: 40%;
-    border-radius: 50px;
+    width: 90%;
+    border-radius: 30px;
     margin-left: 5%;
     float: left;
     text-align: left;
