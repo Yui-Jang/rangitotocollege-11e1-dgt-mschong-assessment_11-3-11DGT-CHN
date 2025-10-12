@@ -247,7 +247,7 @@ div.navbar {
     width: 90%;
     background-color: rgb(203, 188, 188);
     border-radius: 50px;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 5%;
     position: static;
@@ -306,4 +306,14 @@ div.bigbody {
     margin-right: 5%;
     margin-bottom: 5%;
     border-radius: 50px;
+}
+
+
+#resourcesdraw {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 0px
 }
