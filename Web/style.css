@@ -296,3 +296,14 @@ div.buttongrid {
     width:40%;
     grid-area: b6;
 }
+
+div.bigbody {
+    background-color:  rgb(203, 188, 188);
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+}
