@@ -34,7 +34,7 @@ ul li a {
     text-align: left;
     transition-duration: 0s;
     padding: none;
-    margin: 0;
+    margin: 10px;
 }
 
 
@@ -66,14 +66,16 @@ ul li a:hover {
     background-color: rgb(191, 178, 164);
     transition-duration: 0s;
     padding: none;
-    margin: 0;
+    margin: 10px;
 }
 
+/*css for the block of the dropdown itself */
 ul li:hover ul.dropdown {
     display: block;
     transition-duration: 0s;
     padding: none;
     margin: 0;
+    width: 200%;
 }
 
 
