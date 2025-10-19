@@ -329,10 +329,11 @@ div.qabody {
     min-height: 100vh;
 }
 
-.content {
+.qacontainer {
     margin: 0 auto;
     padding: 4rem;
     width: 48rem;
+    font-family: "Dongle" "sans-serif";
 }
 
 .accordion .accordion-item {
@@ -358,8 +359,7 @@ div.qabody {
     outline: none;
 }
 
-.accordion button:hover,
- .accordion button:focus{
+.accordion button:hover, .accordion button:focus{
     cursor: pointer;
     color: brown;
  }
@@ -410,25 +410,22 @@ div.qabody {
     color: brown;
  }
 
-  .accordion button[aria-expanded=true] +
-  .accordion-content {
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+
+  .accordion button[aria-expanded=true] + .accordion-content {
     opacity: 1;
     max-height: 9em;
     transition: all 200ms linear;
     will-change: opacity, max-height;
  }
 
-  .accordion button[aria-expanded=true] 
-  .icon::after {
-    width: 0;
-  }
-
 .accordion .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 200mx linear,
-    max-height 200mx linear;
+    transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
 }
 
