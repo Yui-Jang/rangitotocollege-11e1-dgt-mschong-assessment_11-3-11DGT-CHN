@@ -8,15 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+<title>FAQ</title>
   </head>
   <div class = "banner">
-      <div class="toptitle">
-      <h1>learnguitar☆</h1>
-    </div>
-    <nav>
-  <ul> 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">About</a>
+      <img src="imgs/guitarfroggy.png" alt="logo" id="froggylogo">
+      <h1>guitarfroggy☆</h1>
+  <ul>
+    <li><a href="index.html">About</a>
      <ul class="dropdown">
         <li><a href="partsofguitar.html">Guitar parts</a></li>
         <li><a href="QA.html">Q&A</a></li>
@@ -32,17 +30,57 @@
     </li>
     <li><a href="resources.html">Resources</a></li>
     </ul>
-    </nav>
   </div>
       <body> 
-    <div class="bigbody">
-     <p>jkdwnilawbiefkndajklwaeLorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Architecto soluta quam ex nam illum deleniti eligendi saepe 
-        nemo quisquam possimus laboriosam vel nisi molestias praesentium 
-        tempora sit officia esse, veniam qui consequatur sapiente libero?
-         Labore eveniet sint, similique obcaecati est porro cum deserunt 
-         nisi commodi soluta ullam molestiae. Unde, autem.</p>
-    </div>
+    <div class="content">
+      <img src="imgs/IMG_3126.jpg" alt="faqtitle" id="faqtitle">
+      <div class="accordion">
+        <div class="accordion-item">
+          <button aria-expanded="false"><span class="accordion-title">Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto tempore repellat suscipit earum nostrum dolorem
+             tempora, quas fugit corporis nam, optio laudantium sint, 
+             magni rerum fuga expedita illum repudiandae fugiat?</p>
+        </div>
+        </div>
+         <div class="accordion-item">
+          <button aria-expanded="false"><span class="accordion-title">Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto tempore repellat suscipit earum nostrum dolorem
+             tempora, quas fugit corporis nam, optio laudantium sint, 
+             magni rerum fuga expedita illum repudiandae fugiat?</p>
+        </div>
+        </div>
+         <div class="accordion-item">
+          <button aria-expanded="false"><span class="accordion-title">Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto tempore repellat suscipit earum nostrum dolorem
+             tempora, quas fugit corporis nam, optio laudantium sint, 
+             magni rerum fuga expedita illum repudiandae fugiat?</p>
+        </div>
+        </div>
+         <div class="accordion-item">
+          <button aria-expanded="false"><span class="accordion-title">Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto tempore repellat suscipit earum nostrum dolorem
+             tempora, quas fugit corporis nam, optio laudantium sint, 
+             magni rerum fuga expedita illum repudiandae fugiat?</p>
+        </div>
+        </div>
+         <div class="accordion-item">
+          <button aria-expanded="false"><span class="accordion-title">Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto tempore repellat suscipit earum nostrum dolorem
+             tempora, quas fugit corporis nam, optio laudantium sint, 
+             magni rerum fuga expedita illum repudiandae fugiat?</p>
+        </div>
+        </div>
+      </div>
     </div>
      <div class="footer">
       <div class="footerword">
@@ -50,8 +88,21 @@
         + 640123812090
      </div>
       </div>
-      </div>
-    <script src="index.js"></script>
-</div>
+    <script>
+      const items = document.querySelectorAll(“.accordion button”);
+
+      function toggleAccordion() {  
+	      const itemToggle = this.getAttribute(‘aria-expanded’);
+
+      items.forEach(item => {
+	      item.setAttribute(‘aria-expanded’, ‘false’);
+      })
+
+      if (itemToggle == ‘false’) {
+	      this.setAttribute(‘aria-expanded’, ‘true’);
+      }
+    } 
+  item.forEach(item => item.addEventListener(‘click’, toggleAccordion));
+    </script>
   </body>
 </html>
