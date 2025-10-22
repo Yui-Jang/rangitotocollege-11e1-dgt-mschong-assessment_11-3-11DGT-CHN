@@ -276,7 +276,7 @@ div.buttonflex {
 #button3 {
     width:40%;
     grid-area: b3;
-     border-radius: 50px;
+    border-radius: 50px;
     
 }
 
@@ -337,10 +337,12 @@ div.qabody {
   padding: 1em 0;
   color: #5d433c;
   font-size: 1.15rem;
-  font-weight: 400;
-  border: none;
+  font-weight: 700;
+  font-family: "Dongle", sans-serif;
   background: none;
+  border-radius: 50px;
   outline: none;
+  border: none;
 }
 .accordion button:hover, .accordion button:focus {
   cursor: pointer;
@@ -454,7 +456,7 @@ div.footerwordqa h1 {
 
 div.footerwordqa {
     position: absolute;
-    top: 55%;
+    top: 65%;
 }
 
 div.footerwordqa a:hover {
@@ -468,8 +470,8 @@ div.footerwordqa h3 {
 }
 
 #construction {
-    width: 95%;
-    margin-left: 5%;
+    width: 70%;
+    margin-left: 10%;
     border-radius: 150px;
     padding: 5%;
 }
@@ -491,5 +493,10 @@ div.gobackbutton a:hover {
   background-color: #d49a90;
   border-radius: 150px;
   width: 20%;
+}
+
+div.buttonflex a:hover {
+    background-color: wheat;
+    margin-right: 10%;
 }
 
