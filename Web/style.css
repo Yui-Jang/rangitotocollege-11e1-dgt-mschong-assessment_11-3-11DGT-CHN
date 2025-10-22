@@ -32,7 +32,7 @@ ul li a {
     display: block;
     text-decoration: none;
     text-align: left;
-    transition-duration: 0s;
+    transition-duration: 0.2s;
     padding: none;
     margin: 10px;
 }
@@ -41,7 +41,7 @@ ul li a {
 ul li ul.dropdown li {
     display: block;
     font-size: 80%;
-    transition-duration: 0s;
+    transition-duration: 0.2s;
     padding: none;
     margin: 0;
 }
@@ -57,14 +57,14 @@ ul li ul.dropdown {
     margin-top: 2px;
     margin-bottom: 2px;
     border-radius: 25px;
-    transition-duration: 0s;
+    transition-duration: 0.3s, linear;
     padding: none;
     margin: 0;
 }
 
 ul li a:hover {
     background-color: rgb(191, 178, 164);
-    transition-duration: 0s;
+    transition-duration: 0.2s;
     padding: none;
     margin: 10px;
 }
@@ -72,7 +72,7 @@ ul li a:hover {
 /*css for the block of the dropdown itself */
 ul li:hover ul.dropdown {
     display: block;
-    transition-duration: 0s;
+    transition-duration: 0.3s, linear;
     padding: none;
     margin: 0;
     width: 200%;
@@ -183,8 +183,6 @@ a:hover {
   background-color: #d49a90;
   border-radius: 20px;
   cursor: pointer;
-  padding: none;
-  margin: none;
 }
 div.banner {
     background-color: white;
@@ -213,7 +211,7 @@ div.navbar {
     border-radius: 50px;
     grid-area: bodytwo;
     margin: 5%;
-    height: 70%;
+     height: 95%;
 }
 
 #img1 {
@@ -247,7 +245,6 @@ div.resourcesbody {
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 5%;
-    position: static;
 }
 
 div.buttonflex {
@@ -356,6 +353,11 @@ div.qabody {
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
 }
+
+.accordion-title {
+    font-size: 200%;
+}
+
 .accordion button .icon {
   display: inline-block;
   position: absolute;
@@ -407,7 +409,8 @@ div.qabody {
 }
 .accordion .accordion-content p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 150%;
   margin: 2em 0;
 }
 #faqtitle {
@@ -473,7 +476,7 @@ div.footerwordqa h3 {
     width: 60%;
     margin-left: 5%;
     border-radius: 150px;
-    padding: 5%;
+    padding-top: 5%;
     float: left;
     text-align: left;
 }
@@ -481,12 +484,12 @@ div.footerwordqa h3 {
 div.gobackbutton {
     background-color: white;
     width: 20%;
-    margin-left: 80%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
     font-size: 150%;
     border-radius: 150px;
     text-align: center;
-    float: right;
+    float: left;
     position: relative;
     bottom: 50%;
 }
@@ -500,7 +503,6 @@ div.gobackbutton a:hover {
 }
 
 div.buttonflex a:hover {
-    background-color: wheat;
-    margin-right: 10%;
+    border-radius: 200px;
+    background-color: rgb(188, 165, 165);
 }
-
