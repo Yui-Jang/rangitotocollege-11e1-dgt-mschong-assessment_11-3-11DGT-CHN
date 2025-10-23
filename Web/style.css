@@ -102,6 +102,11 @@ div.banner h1 {
     margin-right: 5%;
 }
 
+div.bigbody h1 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
 
 div.body {
     color: rgb(86, 55, 46);
@@ -141,7 +146,7 @@ h4 {
 
 div.footerword {
     float: left;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 div.banner {
@@ -509,4 +514,22 @@ div.buttonflex {
     border-radius: 150px;
     grid-area: b3;
     
+}
+
+#dynamicimg {
+    border-radius: 150px;
+    width: 90%;
+}
+
+#articimg {
+    border-radius: 150px;
+    width: 90%;
+}
+
+#chordtitleimg {
+    border-radius: 150px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
