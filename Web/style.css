@@ -120,20 +120,28 @@ div.footer {
   display: grid;
   grid-template-columns: auto auto;
   padding: 80px;
-  justify-content: flex-end;
   border-top: solid;
   border-color: #966c5a;
   padding-top: 10%;
 }
 
-p {
+p, h1{
     margin: 5%;
     font-size: 200%;
 }
 
+div.footerword a:hover {
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
 div.footerword {
-    margin-right: 200px;
-    font-size: 130%;
+    float: left;
+    font-size: 300%;
 }
 
 div.banner {
@@ -203,7 +211,6 @@ div.navbar {
     border-radius: 50px;
     grid-area: bodyone;
     margin: 5%;
-    height: 95%;
 }
 
 .container > div.bodytwo {
@@ -211,20 +218,16 @@ div.navbar {
     border-radius: 50px;
     grid-area: bodytwo;
     margin: 5%;
-     height: 95%;
+    margin-bottom: 5%;
 }
 
 #img1 {
     width: 90%;
     border-radius: 30px;
     margin-left: 5%;
-    float: left;
-    text-align: left;
-}
-
-#img2 {
-    width: 20%;
-    border-radius: 50px;
+    float: center;
+    text-align: center;
+    margin-top: 10%;
 }
 
 div.resourcesbody {
@@ -420,7 +423,7 @@ div.footerwordqa h1 {
 
 div.footerwordqa {
     position: absolute;
-    top: 65%;
+    top: 70%;
 }
 
 div.footerwordqa a:hover {
