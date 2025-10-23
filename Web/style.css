@@ -104,16 +104,6 @@ div.bigbody h1 {
     padding: 0;
 }
 
-
-div.body {
-    color: rgb(86, 55, 46);
-    background-color: #f3e7e7;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 div.footer {
   font-family: "Dongle", sans-serif;
   color: black;
@@ -152,28 +142,13 @@ div.banner {
     display: flex;
     flex-direction: row;
     background-color: #fff8f4;
-    color: #71463c;
+    color: #583730;
     padding: 5px;
     justify-content: space-evenly;
     font-size: 200%;
     background-color: #f3e7e7;
 }
 
-summary:hover {
-    cursor: pointer;
-    color: rgb(255, 189, 189);
-    background-color: #7b3328;
-    border-radius: 20px;
-    border: 5px;
-    transition-duration: 0.5s;
-} 
-
-summary {
-    transition-duration: 0.5s;
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .container2 {
     display: grid;
     grid-template-areas:
@@ -188,7 +163,7 @@ a {
 }
 
 a:hover {
-  color: rgb(76, 50, 50);
+  color: #281a1a;
   transition-duration: 0.4s;
   background-color: #d49a90;
   border-radius: 20px;
@@ -242,7 +217,7 @@ div.resourcesbody {
 
 
 div.bigbody {
-    background-color:  rgb(203, 188, 188);
+    background-color:  rgb(201, 186, 186);
     padding-top:5px;
     padding-bottom:5px;
     margin-top: 5%;
@@ -564,4 +539,10 @@ div.backtoresources {
     border-radius: 50px;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#guitarlabel {
+    width: 95%;
+    margin: 2.5%;
+    border-radius: 50px;
 }
