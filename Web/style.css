@@ -1,3 +1,6 @@
+
+/*Imported font, from google fonts. These are the different weight values. 
+Font-weight: 400; means the boldness is normal, 700, bold, 300, light.*/
 .dongle-regular {
   font-family: "Dongle", sans-serif;
   font-weight: 400;
@@ -13,11 +16,12 @@
   font-weight: 300;
 }
 
+/*Unordered list css, and adjustments. */
 ul {
     list-style: none;
     font-size: 100%;
 }
-
+/*From here on, it was the section to make a dropdown page.  */
 ul li {
     margin-top: 30px;
     display: inline-block;
@@ -25,6 +29,7 @@ ul li {
     font-size: 150%;
 }
 
+/* The navigation bar links */
 ul li a {
     display: block;
     text-decoration: none;
@@ -34,7 +39,7 @@ ul li a {
     margin: 10px;
 }
 
-
+/*css that adjusts what is inside the dropdown */
 ul li ul.dropdown li {
     display: block;
     font-size: 80%;
@@ -59,6 +64,8 @@ ul li ul.dropdown {
     margin: 0;
 }
 
+/*The hover features, such as changing colour or highlighting. transition duration helps
+the smooth transition between sharp edges to curved highlighted edges. */
 ul li a:hover {
     background-color: rgb(191, 178, 164);
     transition-duration: 0.2s;
@@ -75,7 +82,8 @@ ul li:hover ul.dropdown {
     width: 200%;
 }
 
-
+/*Overall body, changes most of the fonts and sets the background colour
+for all the pages. */
 body {
     color: black;
     font-family: "Dongle", sans-serif;
@@ -85,6 +93,7 @@ body {
     background-color: #f3e7e7;
 }
 
+/*Container only used in page 1-home, for the split bodies. */
 .container {
     display: grid;
     grid-template-areas:
@@ -93,17 +102,20 @@ body {
     grid-template-columns: auto auto;
 }
 
+/*Specific font size and margin values for the 'guitarfroggy' in the navbar. */
 div.banner h1 {
     font-size: 190%;
     margin-top: 6%;
     margin-right: 5%;
 }
 
+/*Bigbody signifying not two separate bodies. This is essentially just a body replacement. */
 div.bigbody h1 {
     margin-bottom: 0;
     padding: 0;
 }
 
+/*css for The footer for the website. */
 div.footer {
   font-family: "Dongle", sans-serif;
   color: black;
@@ -117,25 +129,34 @@ div.footer {
   padding-top: 2%;
 }
 
+/*overall p and h1 margin and size */
 p, h1{
-    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 200%;
 }
 
+/*The link in the footer, for the email when hovered so that it slides a little to the right.
+The transition duration is set on another a:hover css. */
 div.footerword a:hover {
     margin-left: 10px;
 }
 
+/*sets no margins or paddings for h4 so proximity is correct */
 h4 {
     margin: 0;
     padding: 0;
 }
 
+/*The words in the footer. aligned to the left. */
 div.footerword {
     float: left;
     font-size: 250%;
 }
 
+/*The banner, which is the navigation bar. It is used as a flexbox and spaced evenly. */
 div.banner {
     padding-top: 10px;
     margin: 0%;
@@ -149,19 +170,13 @@ div.banner {
     background-color: #f3e7e7;
 }
 
-.container2 {
-    display: grid;
-    grid-template-areas:
-    "img chunk1"
-    "chunk2 img2";
-    grid-template-columns: auto auto;
-}
-
+/*colour of all links */
 a {
     color: #374444;
     transition-duration: 0.5s;
 }
 
+/*overall hover. this is where the footerword gets the sliding transition duration. */
 a:hover {
   color: #281a1a;
   transition-duration: 0.4s;
@@ -169,27 +184,15 @@ a:hover {
   border-radius: 20px;
   cursor: pointer;
 }
-div.banner {
-    background-color: white;
-}
 
-
-div.navbar {
- display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 0;
-    margin-top: 10px;
-    font-size: 200%;
-}
-
+/*most left body in home page. is in a grid */
 .container > div.bodyone {
     background-color: rgb(203, 188, 188);
     border-radius: 50px;
     grid-area: bodyone;
     margin: 5%;
 }
-
+/*most right body in home page, is in a grid */
 .container > div.bodytwo {
     background-color: rgb(188, 165, 165);
     border-radius: 50px;
@@ -198,6 +201,7 @@ div.navbar {
     margin-bottom: 5%;
 }
 
+/*img design jigging */
 #img1 {
     width: 90%;
     border-radius: 30px;
@@ -206,16 +210,7 @@ div.navbar {
     margin-top: 10%;
 }
 
-div.resourcesbody {
-    width: 90%;
-    background-color: rgb(203, 188, 188);
-    border-radius: 50px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-}
-
-
+/*css designs for body */
 div.bigbody {
     background-color:  rgb(201, 186, 186);
     padding-top:5px;
@@ -227,7 +222,7 @@ div.bigbody {
     border-radius: 50px;
 }
 
-
+/*Another specific css changing choice from the normal bigbody css */
 div.chordbigbody {
     background-color:  rgb(203, 188, 188);
     padding-top:5px;
@@ -238,7 +233,7 @@ div.chordbigbody {
     border-radius: 50px;
 }
 
-
+/*img of resources banner at the top of resources page. */
 #resourcesdraw {
     margin-top: 5%;
     width: 90%;
@@ -247,12 +242,13 @@ div.chordbigbody {
     border-radius: 30px;
 }
 
+/*accordion/collapsible css. Learnt it from a tutorial (linked in dev log) */
 * {
     box-sizing: border-box;
 } *::before, *::after {
     box-sizing: border-box;
 }
-
+/*overall body of the accordion */
 div.qabody {
     margin: 0;
     padding: 0;
@@ -263,6 +259,7 @@ div.qabody {
     min-height: 100vh;
 }
 
+/*container for the accordion, sets a grid area */
 .qacontainer {
   grid-area: accordion;
   margin: 0 auto;
@@ -270,12 +267,16 @@ div.qabody {
   width: 60%;
 }
 
+
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
+
+/* aria-expanded=true is when the question is pressed. */
 .accordion .accordion-item button[aria-expanded=true] {
   border-bottom: 1px solid #edc29c;
 }
+/*The big block of button (which is the question) */
 .accordion button {
   position: relative;
   display: block;
@@ -291,23 +292,28 @@ div.qabody {
   outline: none;
   border: none;
 }
+/*Colour and cursor change when hovering over the question */
 .accordion button:hover, .accordion button:focus {
   cursor: pointer;
   color: #c37d55;
 }
+/*after hovering over it, the colour remains the same showing which
+question you were previously over. */
 .accordion button:hover::after, .accordion button:focus::after {
   cursor: pointer;
   color: #c37d55;
   border: 1px solid #554338;
 }
+/*More adjustments to padding of the button*/
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
 }
-
+/*The actual question */
 .accordion-title {
     font-size: 200%;
 }
 
+/*The button on the right*/
 .accordion button .icon {
   display: inline-block;
   position: absolute;
@@ -318,6 +324,8 @@ div.qabody {
   border: 1px solid;
   border-radius: 22px;
 }
+
+/*The design when it is a plus sign */
 .accordion button .icon::before {
   display: block;
   position: absolute;
@@ -328,6 +336,7 @@ div.qabody {
   height: 2px;
   background: currentColor;
 }
+/*The design when clicked, and it is a minus sign */
 .accordion button .icon::after {
   display: block;
   position: absolute;
@@ -338,12 +347,17 @@ div.qabody {
   height: 10px;
   background: currentColor;
 }
+
+/*The changing of colour of the button on the right when it expands */
 .accordion button[aria-expanded=true] {
   color: #c37d55;
 }
+
 .accordion button[aria-expanded=true] .icon::after {
   width: 0;
 }
+
+/* the adjustments of the actual content space inside, and the transition durations. */
 .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
   max-height: 35em;
@@ -363,6 +377,8 @@ div.qabody {
   font-size: 150%;
   margin: 2em 0;
 }
+
+/*more image presets, usually border radius to make the image curved. */
 #faqtitle {
     width: 95%;
     border-radius: 30px;
@@ -375,12 +391,16 @@ div.qabody {
     border-radius: 150px;
     margin-top: 5%;
 }
-
-.overallcontainer {
-    display: flex;
-    flex-direction: column;
+#askimg {
+    width: 35%;
+    position: absolute;
+    border-radius: 30px;
+    right: 2.5%;
+    padding: 0;
 }
 
+/*Specific footer css for qa, because the footer doesnt exist at the bottom int eh FAQ page
+but on the right. */
 div.qafooter {
   grid-area: qafooter;   
   font-family: "Dongle", sans-serif;
@@ -394,14 +414,8 @@ div.qafooter {
   text-align: center;
 }
 
-#askimg {
-    width: 35%;
-    position: absolute;
-    border-radius: 30px;
-    right: 2.5%;
-    padding: 0;
-}
-
+/* footer words on the FAQ page, and specific adjustments for it such as the links,
+transition duration, and hover.*/
 div.footerwordqa h1 {
     width: 90%;
     text-decoration: underline;
@@ -435,6 +449,7 @@ div.footerwordqa h3 {
     text-align: left;
 }
 
+/*css for the go back button once you click socials*/
 div.gobackbutton {
     background-color: white;
     width: 20%;
@@ -456,6 +471,7 @@ div.gobackbutton a:hover {
   width: 20%;
 }
 
+/*buttonflex, the flexbox for the two buttons in the resources page. */
 div.buttonflex a:hover {
     border-radius: 150px;
     width: 100%;
@@ -483,6 +499,7 @@ div.buttonflex {
     gap: 1%;
 }
 
+/*button image css design adjustments */
 #button1 {
     width: 100%;
      border-radius: 150px;
@@ -496,6 +513,7 @@ div.buttonflex {
     
 }
 
+/*more img adjustments */
 #dynamicimg {
     border-radius: 150px;
     width: 90%;
@@ -521,6 +539,7 @@ div.buttonflex {
     border-radius: 150px;
 }
 
+/*button for when going back from the file or backing track page to resources, the root of the two again. */
 div.backtoresources {
     background-color: #FFFFFF;
     border-radius: 150px;

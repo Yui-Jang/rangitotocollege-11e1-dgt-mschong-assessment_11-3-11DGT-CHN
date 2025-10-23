@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>learnguitar</title>
     <link rel="stylesheet" href="style.css">
+    <!--Copypaste from google fonts, to import Dongle font.-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
@@ -31,9 +32,12 @@
     </ul>
   </div>
       <div class="qabody"> 
+        <!--accordion/collapsible html. learned from a tutorial: linked in dev log. -->
     <div class="qacontainer">
       <img src="imgs/faqtitle.jpg" alt="faqtitle" id="faqtitle">
        <div class="accordion">
+        <!-- each accordion-item is each question and accordion-title is the question. accordion-content
+         is the answer to the question, inside a collapsible area.-->
       <div class="accordion-item">
         <button aria-expanded="false"><span class="accordion-title">Q: Is guitar hard?</span><span class="icon" aria-hidden="true"></span></button>
         <div class="accordion-content">
@@ -123,6 +127,8 @@
       </div>
     </div>
   </div>
+  <!-- qa footer is different from other footers, existing on the right side of the 
+   page like a panel. carries more information than a normal footer in other pages.-->
      <div class="qafooter">
       <div class="askimg">
       <img src="imgs/ask.png" alt="askingimg" id="askimg">
